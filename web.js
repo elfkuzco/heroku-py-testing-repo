@@ -4,7 +4,7 @@ var http = require('http');
 // Configure HTTP server to respond with Hello World to all requests
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World.\nAn update to the app.");
+  response.end("Hello World.\nAn update to the app.\nWelcoming you to the next generation technology.");
 });
 
 var port = process.env.PORT || 3000;
