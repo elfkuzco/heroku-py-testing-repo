@@ -1,10 +1,12 @@
 // Load the http module to create an http server
-var http = require('http');
+var http = require("http");
 
 // Configure HTTP server to respond with Hello World to all requests
 var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World.\nAn update to the app.\nWelcoming you to the next generation technology.\nSign up to take the future with you");
+  response.writeHead(200, { "Content-Type": "text/html" });
+  response.end(
+    "<p>Hello there&#33;&#33;.This is the <a href='https://github.com/elfkuzco/heroku-py'>heroku-py Testing app</a>.</p>"
+  );
 });
 
 var port = process.env.PORT || 3000;
@@ -14,4 +16,3 @@ server.listen(port);
 
 // Put a friendly message on the terminal
 console.log("Server listening on port " + port);
-
