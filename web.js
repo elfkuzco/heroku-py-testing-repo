@@ -5,7 +5,7 @@ var http = require("http");
 var server = http.createServer(function (request, response) {
   response.writeHead(200, { "Content-Type": "text/html" });
   response.end(
-    "<p>Hello there&#33;&#33;.This is the <a href='https://github.com/elfkuzco/heroku-py'>heroku-py Testing app</a>.</p>"
+    "<p>Hello there&#33;&#33;.This is the <a href='https://github.com/elfkuzco/heroku-py'>heroku-py Testing app</a>(from gzipped source).</p>"
   );
 });
 
